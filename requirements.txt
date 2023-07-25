@@ -1,0 +1,8 @@
+fastapi
+pydantic
+uvicorn
+chroma-hnswlib
+langchain
+tiktoken
+pypdf
+chromadb
