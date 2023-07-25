@@ -5,10 +5,10 @@ from langchain.llms import OpenAI
 from langchain.memory import ConversationBufferMemory
 from langchain.vectorstores import Chroma
 
-import os
+# import os
 
-# Set API key
-os.environ['OPENAI_API_KEY'] = ""
+# Set API key if running locally -- Commented out for Docker
+# os.environ['OPENAI_API_KEY'] = ""
 
 
 # Prompt template to ensure it responds to the user's question in first person/as "ME"
