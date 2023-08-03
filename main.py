@@ -1,8 +1,5 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from fastapi.templating import Jinja2Templates
-from fastapi.responses import HTMLResponse, FileResponse, RedirectResponse
-from fastapi.staticfiles import StaticFiles
 import uvicorn
 import api.model as model
 
