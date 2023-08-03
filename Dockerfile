@@ -5,16 +5,16 @@ FROM python:3.11
 WORKDIR /code
 
 # Copy the requirements.txt file into the container at /app
-COPY requirements.txt /code/
+COPY requirements.txt .
 
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the current directory contents into the container at /app
-COPY ./api/* /code/
+COPY . /code/
 
 # Make port 80 available to the world outside this container
 EXPOSE 80
 
 # Run the command to start Uvicorn
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
+CMD ["gunicorn", "main:app"]

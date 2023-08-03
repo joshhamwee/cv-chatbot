@@ -1,9 +1,12 @@
 fastapi
 pydantic
 uvicorn
+gunicorn
 chroma-hnswlib
 langchain
 tiktoken
 pypdf
 chromadb
 openai
+jinja2
+python-multipart

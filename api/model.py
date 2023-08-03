@@ -27,7 +27,7 @@ def load_split_pdf(filepath: str):
         return None
 
 
-filepath = 'functionalsample.pdf'
+filepath = r'./data/functionalsample.pdf'
 custom_data = load_split_pdf(filepath)
 
 embeddings = OpenAIEmbeddings()
