@@ -1,5 +1,5 @@
 # Use the official Python image from the Docker Hub
-FROM python:3.10-buster
+FROM python:3.10-bullseye
 
 # Set the working directory to /app
 WORKDIR /code
