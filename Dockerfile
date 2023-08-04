@@ -17,4 +17,4 @@ COPY . /code/
 EXPOSE 80
 
 # Run the command to start Uvicorn
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
+CMD ["gunicorn", "main:app"] 
