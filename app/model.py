@@ -13,7 +13,8 @@ from langchain.vectorstores import Chroma
 
 # Prompt template to ensure it responds to the user's question in first person/as "ME"
 def get_prompt(question):
-    return f"""Answer the following question as if you are John Smith, ie in first person.
+    return f"""Answer the following question as if you are Josh Hamwee, ie in first person. Change the text so its as\
+          if you were having a conversation with someone.
     Follow Up Input: {question}"""
 
 
@@ -27,7 +28,7 @@ def load_split_pdf(filepath: str):
         return None
 
 
-filepath = r'./data/functionalsample.pdf'
+filepath = r'./data/Josh P. Hamwee.pdf'
 custom_data = load_split_pdf(filepath)
 
 embeddings = OpenAIEmbeddings()
